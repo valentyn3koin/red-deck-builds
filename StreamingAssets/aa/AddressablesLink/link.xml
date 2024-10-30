@@ -1,7 +1,10 @@
 <linker>
   <assembly fullname="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="BatteryView" preserve="all" />
+    <type fullname="CardAnimatorController" preserve="all" />
     <type fullname="CardViewInfo" preserve="all" />
+    <type fullname="DamageCardFXController" preserve="all" />
+    <type fullname="DivineShieldCardFXController" preserve="all" />
     <type fullname="RedDeck.AbilityData" preserve="all" />
     <type fullname="RedDeck.AllByStatusFilter" preserve="all" />
     <type fullname="RedDeck.AllMyBoardMinioFilter" preserve="all" />
@@ -9,8 +12,11 @@
     <type fullname="RedDeck.CardOppositeSideFilter" preserve="all" />
     <type fullname="RedDeck.Cards.CardData" preserve="all" />
     <type fullname="RedDeck.Cards.CardInfoStatusViewController" preserve="all" />
+    <type fullname="RedDeck.Cards.CardSlot" preserve="all" />
     <type fullname="RedDeck.Cards.CardView" preserve="all" />
     <type fullname="RedDeck.Cards.LevelInfoStarUI" preserve="all" />
+    <type fullname="RedDeck.Cards.MechanicsView" preserve="all" />
+    <type fullname="RedDeck.Cards.MiniCardView" preserve="all" />
     <type fullname="RedDeck.Cards.ViewInfoStatus" preserve="all" />
     <type fullname="RedDeck.ChooseModeScreen.ChooseModeScreen" preserve="all" />
     <type fullname="RedDeck.Collections.CollectionScreen" preserve="all" />
@@ -25,7 +31,6 @@
     <type fullname="RedDeck.Effect.Battlecry.AddAttackAndHp" preserve="all" />
     <type fullname="RedDeck.Effect.Battlecry.AddHp" preserve="all" />
     <type fullname="RedDeck.Effect.Battlecry.AddHpAndAttackMultiplication" preserve="all" />
-    <type fullname="RedDeck.Effect.Battlecry.BattlecrySummon" preserve="all" />
     <type fullname="RedDeck.Effect.Battlecry.GainSelfHp" preserve="all" />
     <type fullname="RedDeck.Effect.Battlecry.HealHp" preserve="all" />
     <type fullname="RedDeck.Effect.Battlecry.StickyEffect" preserve="all" />
@@ -36,21 +41,26 @@
     <type fullname="RedDeck.Effect.TargetFreeze" preserve="all" />
     <type fullname="RedDeck.EmptyFilter" preserve="all" />
     <type fullname="RedDeck.EmptyFilterWithoutCaster" preserve="all" />
+    <type fullname="RedDeck.FieldMedicFilter" preserve="all" />
     <type fullname="RedDeck.FindOpponents.FindOpponentsScreen" preserve="all" />
     <type fullname="RedDeck.GetCardsByCasterType" preserve="all" />
     <type fullname="RedDeck.GetCardsByCasterTypeWithAmountType" preserve="all" />
     <type fullname="RedDeck.Heroes.HeroChooseScreen" preserve="all" />
     <type fullname="RedDeck.Heroes.HeroData" preserve="all" />
+    <type fullname="RedDeck.Heroes.HeroPickViewItem" preserve="all" />
     <type fullname="RedDeck.Heroes.HeroSkillData" preserve="all" />
     <type fullname="RedDeck.Heroes.HeroViewInfo" preserve="all" />
     <type fullname="RedDeck.HeroPanel.HeroesItemView" preserve="all" />
     <type fullname="RedDeck.HeroPanel.HeroesPanelView" preserve="all" />
     <type fullname="RedDeck.HeroPanel.HeroPanelItemView" preserve="all" />
     <type fullname="RedDeck.HeroSelfFilter" preserve="all" />
+    <type fullname="RedDeck.HighCommanderSummonSet" preserve="all" />
+    <type fullname="RedDeck.IdsTargetsFilter" preserve="all" />
     <type fullname="RedDeck.IdTargetFilter" preserve="all" />
     <type fullname="RedDeck.MainMenu.MainMenuScreen" preserve="all" />
     <type fullname="RedDeck.RandomCardFilter" preserve="all" />
     <type fullname="RedDeck.RandomCardsFilter" preserve="all" />
+    <type fullname="RedDeck.RandomEnemyDeathAbility" preserve="all" />
     <type fullname="RedDeck.SelfCardFilterData" preserve="all" />
     <type fullname="RedDeck.StatusData" preserve="all" />
     <type fullname="RedDeck.StickyFilterMechanic" preserve="all" />
@@ -68,11 +78,15 @@
     <type fullname="RedDeck.Tools.PopupAnimator" preserve="all" />
     <type fullname="RedDeck.UI.UIButtonSound" preserve="all" />
     <type fullname="RedDeck.Utilities.BlinkDots" preserve="all" />
+    <type fullname="RedDeck.Utilities.CardDragRotator" preserve="all" />
+    <type fullname="RedDeck.Utilities.DragAndDrop" preserve="all" />
     <type fullname="RedDeck.Utilities.Grid.ElementsContainer" preserve="all" />
     <type fullname="RedDeck.Utilities.Grid.SmoothGridLayout" preserve="all" />
+    <type fullname="RedDeck.Utilities.GridItem" preserve="all" />
     <type fullname="RedDeck.Heroes.HeroModel" preserve="nothing" serialized="true" />
     <type fullname="RedDeck.Cards.RaceType" preserve="nothing" serialized="true" />
     <type fullname="RedDeck.Tavern.TavernUpdateInfo" preserve="nothing" serialized="true" />
+    <type fullname="RedDeck.Cards.MechanicsData" preserve="nothing" serialized="true" />
   </assembly>
   <assembly fullname="Coffee.UIParticle, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="Coffee.UIExtensions.UIParticle" preserve="all" />
@@ -99,6 +113,7 @@
   </assembly>
   <assembly fullname="Unity.ResourceManager, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" preserve="all">
     <type fullname="UnityEngine.ResourceManagement.ResourceProviders.AssetBundleProvider" preserve="all" />
+    <type fullname="UnityEngine.ResourceManagement.ResourceProviders.AtlasSpriteProvider" preserve="all" />
     <type fullname="UnityEngine.ResourceManagement.ResourceProviders.BundledAssetProvider" preserve="all" />
     <type fullname="UnityEngine.ResourceManagement.ResourceProviders.InstanceProvider" preserve="all" />
     <type fullname="UnityEngine.ResourceManagement.ResourceProviders.LegacyResourcesProvider" preserve="all" />
@@ -122,10 +137,15 @@
     <type fullname="UnityEngine.Timeline.ActivationPlayableAsset" preserve="all" />
     <type fullname="UnityEngine.Timeline.ActivationTrack" preserve="all" />
     <type fullname="UnityEngine.Timeline.AnimationTrack" preserve="all" />
+    <type fullname="UnityEngine.Timeline.ControlPlayableAsset" preserve="all" />
+    <type fullname="UnityEngine.Timeline.ControlTrack" preserve="all" />
+    <type fullname="UnityEngine.Timeline.SignalAsset" preserve="all" />
+    <type fullname="UnityEngine.Timeline.SignalReceiver" preserve="all" />
     <type fullname="UnityEngine.Timeline.TimelineAsset" preserve="all" />
     <type fullname="UnityEngine.Timeline.MarkerList" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.Timeline.TimelineAsset/EditorSettings" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.Timeline.TimelineClip" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Timeline.SignalReceiver/EventKeyValue" preserve="nothing" serialized="true" />
   </assembly>
   <assembly fullname="UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.AnimationClip" preserve="all" />
@@ -133,6 +153,9 @@
     <type fullname="UnityEngine.Animations.RotationConstraint" preserve="all" />
     <type fullname="UnityEngine.Animations.ScaleConstraint" preserve="all" />
     <type fullname="UnityEngine.Animator" preserve="all" />
+  </assembly>
+  <assembly fullname="UnityEngine.AudioModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+    <type fullname="UnityEngine.AudioClip" preserve="all" />
   </assembly>
   <assembly fullname="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.GameObject" preserve="all" />
@@ -152,6 +175,8 @@
     <type fullname="UnityEngine.Events.PersistentCallGroup" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.Events.PersistentListenerMode" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.RectOffset" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.Events.UnityEvent" preserve="nothing" serialized="true" />
+    <type fullname="UnityEngine.ExposedReference`1[UnityEngine.GameObject]" preserve="nothing" serialized="true" />
   </assembly>
   <assembly fullname="UnityEngine.DirectorModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.Playables.PlayableDirector" preserve="all" />
