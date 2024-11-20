@@ -37,7 +37,6 @@
     <type fullname="RedDeck.Effect.Battlecry.StickyEffect" preserve="all" />
     <type fullname="RedDeck.Effect.DeathrattleDamageSolo" preserve="all" />
     <type fullname="RedDeck.Effect.HealTarget" preserve="all" />
-    <type fullname="RedDeck.Effect.Hero.HeroFullHPHealEffect" preserve="all" />
     <type fullname="RedDeck.Effect.TargetDamage" preserve="all" />
     <type fullname="RedDeck.Effect.TargetFreeze" preserve="all" />
     <type fullname="RedDeck.EmptyFilter" preserve="all" />
@@ -142,8 +141,6 @@
     <type fullname="UnityEngine.Timeline.ActivationPlayableAsset" preserve="all" />
     <type fullname="UnityEngine.Timeline.ActivationTrack" preserve="all" />
     <type fullname="UnityEngine.Timeline.AnimationTrack" preserve="all" />
-    <type fullname="UnityEngine.Timeline.ControlPlayableAsset" preserve="all" />
-    <type fullname="UnityEngine.Timeline.ControlTrack" preserve="all" />
     <type fullname="UnityEngine.Timeline.SignalAsset" preserve="all" />
     <type fullname="UnityEngine.Timeline.SignalReceiver" preserve="all" />
     <type fullname="UnityEngine.Timeline.TimelineAsset" preserve="all" />
@@ -180,7 +177,6 @@
     <type fullname="UnityEngine.Events.PersistentListenerMode" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.RectOffset" preserve="nothing" serialized="true" />
     <type fullname="UnityEngine.Events.UnityEvent" preserve="nothing" serialized="true" />
-    <type fullname="UnityEngine.ExposedReference`1[UnityEngine.GameObject]" preserve="nothing" serialized="true" />
   </assembly>
   <assembly fullname="UnityEngine.DirectorModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
     <type fullname="UnityEngine.Playables.PlayableDirector" preserve="all" />
